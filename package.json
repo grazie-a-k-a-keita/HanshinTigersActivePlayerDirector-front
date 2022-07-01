@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^18.0.0",
+    "aws-cdk": "^2.28.1",
     "vue": "^3.2.25",
     "vue-router": "4"
   },

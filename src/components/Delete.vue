@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   playerId: Number,
   name: String,
@@ -12,6 +12,7 @@ defineProps({
   <td>
     <router-link
       :to="`/players/${playerId}/${name}/${backNumber}/${birthday}/${age}/delete`"
+      class="font-medium text-red-600 dark:text-blue-500 hover:underline"
       >削除</router-link
     >
   </td>
