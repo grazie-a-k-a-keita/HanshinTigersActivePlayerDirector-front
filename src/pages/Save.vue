@@ -30,16 +30,13 @@ const player = computed(() =>
 
 // 送信関数
 const save = async () => {
-  await fetch(
-    "//cdkst-servi-jmvvy8m30vww-525412200.ap-northeast-1.elb.amazonaws.com/save",
-    {
-      method: "POST",
-      body: player.value,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  await fetch("/save", {
+    method: "POST",
+    body: player.value,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 };
 
 // 入力チェック + 送信実行

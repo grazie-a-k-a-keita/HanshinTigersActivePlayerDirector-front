@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from "vue";
+import { ref } from "vue";
 import HomeHeader from "../components/HomeHeader.vue";
 import Edit from "../components/Edit.vue";
 import Delete from "../components/Delete.vue";
 
-// インターフェース
 interface Player {
   id: number;
   name: string;
@@ -12,15 +11,24 @@ interface Player {
   birthday: string;
   age: number;
 }
+
 const players = ref<Player[]>([]);
 
-onMounted(async () => {
-  players.value = await (
-    await fetch(
-      "//cdkst-servi-jmvvy8m30vww-525412200.ap-northeast-1.elb.amazonaws.com/allPlayer"
-    )
-  ).json();
-});
+// Pathにアクセスしてplayersに値を入れる
+// onMounted(async () => {
+//   players.value = await (await fetch("/allPlayer")).json();
+// });
+
+// テストデータ
+players.value = [
+  {
+    id: 1,
+    name: "岩崎 優",
+    backNumber: "13",
+    birthday: "1991-06-19",
+    age: 31,
+  },
+];
 </script>
 
 <template>
