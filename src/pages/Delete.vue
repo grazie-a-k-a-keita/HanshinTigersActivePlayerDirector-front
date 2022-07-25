@@ -18,16 +18,13 @@ const player = computed(() =>
 
 // 送信関数
 const deletion = async () => {
-  await fetch(
-    "//cdkst-servi-jmvvy8m30vww-525412200.ap-northeast-1.elb.amazonaws.com/delete",
-    {
-      method: "POST",
-      body: player.value,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  await fetch("/delete", {
+    method: "POST",
+    body: player.value,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 };
 
 // 送信実行 + 確認アラート
