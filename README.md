@@ -1,4 +1,19 @@
-# Vue 3 + TypeScript + Vite
+# 研修 個人開発_02
+『阪神タイガーススーパー選手名鑑』
+阪神タイガースに所属する現役選手を検索できるサイト
+
+## Skill
+### Front
+- Vue.js
+
+## Link
+### 開発環境
+- localhost:8080/
+
+## Overview
+[画像]
+
+## Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
@@ -15,8 +30,9 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
 
-## 起動方法
+## How To Start
 
 ```bash
+yarn install
 yarn dev
 ```
