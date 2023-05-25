@@ -8,7 +8,7 @@
 
 ## Link
 ### 開発環境
-- localhost:3000/
+- localhost:3000/#/
 
 ## Overview
 - HOME
