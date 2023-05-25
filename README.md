@@ -11,7 +11,14 @@
 - localhost:8080/
 
 ## Overview
-[画像]
+- HOME
+![127 0 0 1_3000_(Nest Hub Max)](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/305d5989-e747-4296-bb55-433995edfe78)
+- CREATE
+![127 0 0 1_3000_(Nest Hub Max) (1)](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/ac98bc31-b98c-45f3-97e4-10f11610dc46)
+- UPDATE
+![127 0 0 1_3000_(Nest Hub Max) (2)](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/c6229851-769e-4c29-8b1e-2e78636f3629)
+- DELETE
+![127 0 0 1_3000_(Nest Hub Max) (3)](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/b84b399d-d359-4854-94d1-e9f27fc1b81e)
 
 ## Vue 3 + TypeScript + Vite
 
