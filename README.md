@@ -12,13 +12,13 @@
 
 ## Overview
 - HOME
-![HOME](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/22b05d04-2af6-4bd9-812a-474d6ebb1c62)
+![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/22b05d04-2af6-4bd9-812a-474d6ebb1c62)
 - CREATE
-![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/ac98bc31-b98c-45f3-97e4-10f11610dc46)
+![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/23b08e88-d604-465e-a712-a0d866334582)
 - UPDATE
-![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/c6229851-769e-4c29-8b1e-2e78636f3629)
+![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/700970cc-74d4-4f97-b047-56ceb9f3a8fd)
 - DELETE
-![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/b84b399d-d359-4854-94d1-e9f27fc1b81e)
+![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/10f5d3e8-1d0e-4176-a608-21da17843102)
 
 ## Vue 3 + TypeScript + Vite
 
