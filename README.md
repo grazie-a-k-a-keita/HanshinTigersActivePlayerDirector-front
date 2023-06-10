@@ -12,7 +12,7 @@
 
 ## Overview
 - HOME
-![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/305d5989-e747-4296-bb55-433995edfe78)
+![HOME](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/22b05d04-2af6-4bd9-812a-474d6ebb1c62)
 - CREATE
 ![image](https://github.com/grazie-a-k-a-keita/HanshinTigersActivePlayerDirector-front/assets/106722155/ac98bc31-b98c-45f3-97e4-10f11610dc46)
 - UPDATE
