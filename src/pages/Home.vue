@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import HomeHeader from "../components/HomeHeader.vue";
 import Edit from "../components/Edit.vue";
 import Delete from "../components/Delete.vue";
@@ -14,29 +14,17 @@ interface Player {
 
 const players = ref<Player[]>([]);
 
-// Pathにアクセスしてplayersに値を入れる
-// onMounted(async () => {
-//   players.value = await (await fetch("/allPlayer")).json();
-// });
-
-// テストデータ
-players.value = [
-  {
-    id: 1,
-    name: "岩崎 優",
-    backNumber: "13",
-    birthday: "1991-06-19",
-    age: 31,
-  },
-];
+onMounted(async () => {
+  players.value = await (
+    await fetch("http://localhost:8080/all-player")
+  ).json();
+});
 </script>
 
 <template>
   <div class="body z-10">
     <div class="transparent">
-      <!-- ヘッダー -->
       <HomeHeader class="sticky top-0 z-50" />
-      <!-- 登録選手テーブル -->
       <div class="shadow-xl m-16 rounded-lg z-40 overflow-y-scroll">
         <table class="w-full text-sm text-left text-gray-500">
           <thead class="text-xs text-gray-500 bg-gray-100">
@@ -60,7 +48,7 @@ players.value = [
             </tr>
           </thead>
           <tbody class="text-xs text-gray-700">
-            <tr v-for="player in players">
+            <tr v-for="player in players" :key="player.id">
               <td class="tdName border px-6 py-4">{{ player.name }}</td>
               <td class="tdBackNumber border px-6 py-4">
                 {{ player.backNumber }}

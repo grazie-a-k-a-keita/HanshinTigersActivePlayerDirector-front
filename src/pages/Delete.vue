@@ -16,9 +16,11 @@ const player = computed(() =>
   })
 );
 
-// 送信関数
+/**
+ * 選手情報を削除する
+ */
 const deletion = async () => {
-  await fetch("/delete", {
+  await fetch("http://localhost:8080/delete", {
     method: "POST",
     body: player.value,
     headers: {
@@ -27,7 +29,9 @@ const deletion = async () => {
   });
 };
 
-// 送信実行 + 確認アラート
+/**
+ * 削除ボタンクリック時の処理
+ */
 async function confirmFunction() {
   var message = "この選手を削除してもいいですか？";
   if (confirm(message)) {

@@ -30,9 +30,11 @@ const player = computed(() =>
   })
 );
 
-// 送信関数
+/**
+ * 選手情報を更新する
+ */
 const update = async () => {
-  await fetch("/update", {
+  await fetch("http://localhost:8080/update", {
     method: "POST",
     body: player.value,
     headers: {
@@ -41,11 +43,14 @@ const update = async () => {
   });
 };
 
-// 入力チェック + 送信実行
 const nameNull = ref();
 const backNumberNull = ref();
 const backNumberNotNumber = ref();
 const birthdayNull = ref();
+
+/**
+ * 更新ボタンクリック時の処理
+ */
 const clickUpdate = async () => {
   try {
     // 変数初期化

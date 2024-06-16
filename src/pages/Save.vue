@@ -28,9 +28,11 @@ const player = computed(() =>
   })
 );
 
-// 送信関数
+/**
+ * 選手情報を保存する
+ */
 const save = async () => {
-  await fetch("/save", {
+  await fetch("http://localhost:8080/save", {
     method: "POST",
     body: player.value,
     headers: {
@@ -39,11 +41,14 @@ const save = async () => {
   });
 };
 
-// 入力チェック + 送信実行
 const nameNull = ref();
 const backNumberNull = ref();
 const backNumberNotNumber = ref();
 const birthdayNull = ref();
+
+/**
+ * 保存ボタンクリック時の処理
+ */
 const clickSave = async () => {
   try {
     // 変数初期化
